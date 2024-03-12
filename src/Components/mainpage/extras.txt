@@ -1,0 +1,13 @@
+${ items.head==="tamil" && props.tamilMovie?"moviefade"}
+
+
+ tamilMovie || englishMovie || teluguMovie || hindiMovie ?setMovieFades(true):setMovieFades(false);
+
+
+tamilMovie?setMovieFades(true):setMovieFades(false);
+    englishMovie?setMovieFades(true):setMovieFades(false);
+    teluguMovie?setMovieFades(true):setMovieFades(false);
+    hindiMovie?setMovieFades(true):setMovieFades(false);
+    console.log(`Movie Fade? ${movieFades}`);
+
+    items.language==="tamil" && tamilMovie?{borderColor:"#f84464"}:{}
